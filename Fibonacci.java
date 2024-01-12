@@ -1,16 +1,25 @@
-public class Fibonacci
+import java.util.*;
+class Project17
 {  
     public static void main(String args[])  
     {    
-         int n1=0,n2=1,n3,i,count=10;    
-         System.out.print(n1+" "+n2); 
-    
-         for(i=2;i<count;++i)
-         {    
-              n3=n1+n2;    
-              System.out.print(" "+n3);    
-              n1=n2;    
-              n2=n3;    
-         }
-        }
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number of terms");
+        int n=sc.nextInt();
+        
+        int o=1,z=0;
+        int sum=0;
+        System.out.println();
+        
+        for(int i=0;i<=n;++i)//loop starts from 2 because 0 and 1 are already printed    
+        {    
+            sum = o + z ;
+            
+            System.out.println(sum);    
+            
+            o=z;
+            z=sum;
+        }    
+  
+    }
 }  
