@@ -48,7 +48,7 @@ public class Ivr
     static delay de=new delay();
     public static void mains (String args[]) throws IOException
     {
-        System.out.println("Welcome to \"New brand of living\"");
+        System.out.println("Welcome to intellej bharat\"New brand of living\"");
         System.out.println("Enter 1 for phone number details");
         System.out.println("Enter 2 for sim details");
         System.out.println("Enter 3 for other inquiry");
