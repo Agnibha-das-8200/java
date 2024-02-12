@@ -24,6 +24,20 @@ class Randomnumber
         }
     }
 }
+class delay
+{
+    public void delay()
+    {
+        try 
+        {
+          Thread.sleep(2000);  
+        }
+        catch( InterruptedException obj)
+        {
+            int a=2;
+        }
+    }
+}
 public class Ivr
 {
     static Scanner sc=new Scanner(System.in);
@@ -31,6 +45,7 @@ public class Ivr
     static Secondphrase sp=new Secondphrase();
     static ThirdPhrase tp=new ThirdPhrase();
     static filetxt ft=new filetxt();
+    static delay de=new delay();
     public static void mains (String args[]) throws IOException
     {
         System.out.println("Welcome to \"New brand of living\"");
@@ -51,9 +66,11 @@ public class Ivr
                 break;
             default:
                 System.out.println("Wrong choice");
-            }
+        }
+        de.delay();
         ft. FileTxt();
-        System.out.println("Thank you");
+        de.delay();
+        System.out.println("Thank you!");
     }
 }
 class Firstphrase
@@ -62,7 +79,7 @@ class Firstphrase
     public void Firstphrase()
     {
         Firstphraseparts fps=new Firstphraseparts();
-        System.out.println("Enter 1 for customer \nEnter 2 for Recharge details");
+        System.out.println("Enter 1 for customer service\nEnter 2 for Recharge details");
         int a=sc.nextInt();
         switch (a)
         {
@@ -191,7 +208,7 @@ class filetxt
         Scanner sc=new Scanner(System.in);
         System.out.println("Please give your rating");
         String a=sc.nextLine();
-        FileWriter fw=new FileWriter("a.ppt",true);
+        FileWriter fw=new FileWriter("Rating of program.txt",true);
         BufferedWriter bw=new BufferedWriter(fw);
         PrintWriter pw=new PrintWriter(bw);
         pw.println(a);
