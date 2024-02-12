@@ -68,7 +68,9 @@ public class Ivr
                 System.out.println("Wrong choice");
         }
         de.delay();
+        System.out.println();
         ft. FileTxt();
+        System.out.println();
         de.delay();
         System.out.println("Thank you!");
     }
@@ -147,6 +149,7 @@ class Secondphrase
                 System.out.println("Enter phone number ");
                 String phno4=sc.next();
                 System.out.print("last use of "+phno4+" is ");phnran.Randomdate();System.out.println("days ago");
+                break;
             default:
                 System.out.println("Wrong choice");
         }
