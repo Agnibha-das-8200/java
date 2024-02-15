@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ivr
+comment1.params=
+comment1.target=void\ RandomphoneNumber()
+comment2.params=
+comment2.target=void\ Randomdate()
+comment3.params=args
+comment3.target=void\ mains(java.lang.String[])
+numComments=4
