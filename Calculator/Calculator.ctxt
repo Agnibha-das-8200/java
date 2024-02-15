@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Calculator
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=a\ b
+comment2.target=double\ add(double,\ double)
+comment3.params=a\ b
+comment3.target=double\ subtract(double,\ double)
+comment4.params=a\ b
+comment4.target=double\ multiply(double,\ double)
+comment5.params=a\ b
+comment5.target=double\ divide(double,\ double)
+numComments=6
