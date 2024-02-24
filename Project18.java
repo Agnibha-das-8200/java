@@ -4,78 +4,137 @@
 import java.util.*;
 public class Project18// declares class
 {
-    public static void main(String[] args)//declares method
-    {
-        Scanner sc = new Scanner(System.in);// cals the scanner class
-        int score = 0;// declares the score
-        System.out.println("welcome to a quiz show");
-        //Question 1
-        System.out.println("What is the capital of India?");
-        String answer1 = sc.nextLine();// accepts the usser input
-        if(answer1.equalsIgnoreCase("New Delhi") )//checks the answer
-        {
-            System.out.println("Correct!");
-            score ++;// adds score
-        }
-        else{
-            System.out.println("Incorrect!");
-            score --;//deducts the score
-        }
-        System.out.println(" ");
-        // Question 2
-        System.out.println("Who founded DMart?");
-        String answer2 = sc.nextLine();// accepts the usser input
-        if(answer2.equalsIgnoreCase("Radhakrishnan Damani") || answer2.equals("R Damani")
-        || answer2.equals("R. Damani") )
-        {
-            System.out.println("Correct!");
-            score ++;// adds score
-        }
-        else{
-            System.out.println("Incorrect!");
-            score --;//deducts the score
-        }
-        System.out.println(" ");
-        //question 3
-        System.out.println("What is the eighth power of 2?");
-        int answer3 = sc.nextInt();// accepts the usser input
-        if(answer3 == 256){
-            System.out.println("Correct!");
-            score ++;// adds score
-        }
-        else{
-            System.out.println("Incorrect!");
-            score -- ;//deducts the score
-        }
-        System.out.println(" ");
-        //question 4
-        System.out.println("First President India");
-        String answer4 = sc.nextLine();// accepts the usser input
-        if(answer4.equalsIgnoreCase("Dr. Rajendra Prasad") ||
-        answer4.equalsIgnoreCase(" Rajendra Prasad"))
-        {
-            System.out.println("Correct!");
-            score ++;// adds score
-        }
-        else
-        {
-            System.out.println("Incorrect!");
-            score --;//deducts the score
-        }
-        System.out.println(" ");
-        System.out.println(" ");
-        //question 5
-        System.out.println("How many states are there in India?");
-        int answer5 = sc.nextInt();// accepts the usser input
-        if(answer5 == 28){
-            System.out.println("Correct!");
-            score ++;// adds score
-        }
-        else{
-            System.out.println("Incorrect!");
-            score --;//deducts the score
-        }
-        // displays the final results
-        System.out.println("Thanks for participating! Your score is = "+score);
-    }
+   static int score=0;
+   static Scanner sc=new Scanner(System.in);
+   public void question1()
+   {
+       System.out.println("What is the name of first President?");
+       String fp=sc.next();
+       if (fp.equalsIgnoreCase("Rajendra prasad"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       if (fp.equalsIgnoreCase("R prasad") )
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       if(fp.equalsIgnoreCase("R. Prasad"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       else 
+       {
+           System.out.println("Wrong Answer \nRajendra prasad");
+           score--;
+       }
+   }   
+   public void question2()
+   {
+       System.out.println("How many states are there in our country \'INDIA\'?");
+       int st=sc.nextInt();
+       if (st==28)
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       else
+       {
+           System.out.println("Wrong Answer \n28");
+           score--;
+       }
+   }
+   public void question3()
+   {
+       System.out.println("who awarded the noble prize for\' Geetanjali\'?");
+       String rt=sc.next();
+       if (rt.equalsIgnoreCase("R. tagore"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       if(rt.equalsIgnoreCase("Rabindranath tagore"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       
+       else
+       {
+           System.out.println("Wrong Answer \nRabindranath tagore");
+           score--;
+       }
+   }
+   public void question4()
+   {
+       System.out.println("Who is \'People's president\'?");
+       String apj=sc.next();
+       if(apj.equalsIgnoreCase("APJ Abdul Kalam"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       if (apj.equalsIgnoreCase("A.P.J. Abdul Kalam"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       if (apj.equalsIgnoreCase("Avul Pakir Jainulabdeen Abdul Kalam"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       else 
+       {
+           System.out.println("Wrong Answer");
+           System.out.print("Avul Pakir Jainulabdeen Abdul Kalam or APJ abdul kalam");
+           System.out.println(" or APJ abdul kalam");
+           score--;
+       }
+   }
+   public void question5()
+   {
+       System.out.println("Who invented the 1st computer?");
+       String comp=sc.next();
+       if (comp.equalsIgnoreCase("Charles Babbage"))
+       {
+           System.out.println("Correct answer");
+           score++;
+       }
+       else
+       {
+           System.out.println("Wrong Answer");
+           System.out.println("Charles Babbage");
+           score--;
+       }
+   }
+   public static void main (String args[])
+   {
+       System.out.println("Enter your name ");
+       String nme=sc.nextLine();
+       System.out.println("Enter your age");
+       int age=sc.nextInt();
+       Project18 Q=new Project18();
+       Q.question1();
+       System.out.println();
+       Q.question5();
+       System.out.println();
+       Q.question3();
+       System.out.println();
+       Q.question4();
+       System.out.println();
+       Q.question2();
+       System.out.println();
+       try 
+       {
+           Thread.sleep(3000);
+       }
+       catch(InterruptedException f)
+       {
+           int a=0;
+       }
+       System.out.println(nme+" of age "+age+" has got "+score);
+   }
 }
