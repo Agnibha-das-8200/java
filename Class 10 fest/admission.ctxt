@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=admission
+comment1.params=
+comment1.target=void\ input()
+comment2.params=
+comment2.target=void\ processing()
+comment3.params=
+comment3.target=void\ admit()
+comment4.params=
+comment4.target=void\ fees()
+comment5.params=
+comment5.target=void\ output()
+comment6.params=dob
+comment6.target=int\ age_calculator(java.lang.String)
+comment7.params=
+comment7.target=void\ display()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

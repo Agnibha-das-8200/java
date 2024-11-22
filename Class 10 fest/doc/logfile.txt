@@ -1,0 +1,41 @@
+Class documentation
+<---- javadoc command: ---->
+C:\PROGRA~1\Java\JDK17~1.0_0\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;D:\Class 10 fest
+-d
+D:\Class 10 fest\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+D:\Class 10 fest\Addmission.java
+<---- end of javadoc command ---->
+Loading source file D:\Class 10 fest\Addmission.java...
+D:\Class 10 fest\Addmission.java:170: error: not a statement
+                    Stream[]=sc.nextLine();
+                          ^
+D:\Class 10 fest\Addmission.java:170: error: ';' expected
+                    Stream[]=sc.nextLine();
+                            ^
+D:\Class 10 fest\Addmission.java:173: error: not a statement
+                    Stream[]=sc.nextLine();
+                          ^
+D:\Class 10 fest\Addmission.java:173: error: ';' expected
+                    Stream[]=sc.nextLine();
+                            ^
+4 errors
